@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 29px 0 0 24px;
+    .hamburger {
+        cursor: pointer;
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: normal;
+    }
+}
