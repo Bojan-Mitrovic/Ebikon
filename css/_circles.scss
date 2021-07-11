@@ -1,0 +1,33 @@
+.pin-container {
+    display: flex;
+    gap: 20px;
+    .pin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .circle {
+            width: 49px;
+            height: 49px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blue {
+            background: #5BACE8;
+        }
+        .brown {
+            background: #504C00;
+        }
+        .red {
+            background: #E85B5B;
+        }
+        .green {
+            background: #5BE8B2;
+        }
+        .purple {
+            background: #C25BE8;
+        }
+    }
+}
