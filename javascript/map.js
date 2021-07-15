@@ -6,7 +6,8 @@ function initMap() {
         }
         //new map
     var map = new google.maps.Map(document.getElementById('map'), options);
-
+    //create infoWindow
+    var infoWindow = new google.maps.infoWindow();
     //pins array
     var pins = [{
             coords: { lat: 47.0709, lng: 8.3213 },
