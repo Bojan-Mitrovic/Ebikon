@@ -7,7 +7,7 @@ function initMap() {
         //new map
     var map = new google.maps.Map(document.getElementById('map'), options);
     //create infoWindow
-    var infoWindow = new google.maps.infoWindow();
+    var infowindow = new google.maps.InfoWindow();
     //pins array
     var pins = [{
             coords: { lat: 47.0709, lng: 8.3213 },
@@ -76,5 +76,16 @@ function initMap() {
         if (props.iconImg) {
             marker.setIcon(props.iconImg);
         }
+        if (pins[i].iconImg == '/images/sea.png') {
+            marker.addListener("mouseover", function() {
+                infowindow.open(map, marker);
+                infowindow.setContent("<div class='infowindow-container'>" +
+                    "<img src='/images/riverObj.png' style='top:0'></img><img src='/images/river.png' style='top:10px; left:10px'></img><div class='inner'><h4>Rotsee Badi</h4><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor .</p><span>Mehr</span></div></div>")
+            })
+            marker.addListener('mouseout', function() {
+                infowindow.close()
+            })
+        }
     }
+
 }

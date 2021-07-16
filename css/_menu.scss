@@ -3,8 +3,12 @@
     position: absolute;
     width: 100%;
     height: calc(100vh - 15%);
-    z-index: 3;
+    z-index: 2;
     background: white;
+    .close,
+    .search-menu {
+        cursor: pointer;
+    }
     .close-search {
         display: flex;
         justify-content: space-between;
