@@ -13,11 +13,11 @@ const jsPath = 'javascript/*.js';
 const scssPath = 'src/css/*.scss';
 
 function copyHtml() {
-    return src('src/*.html').pipe(gulp.dest('dist'));
+    return src('src/*.html').pipe(dest('./dist'));
 }
 
 function imgTask() {
-    return src('src/images/*').pipe(imagemin()).pipe(gulp.dest('dist/images'));
+    return src('src/images/*').pipe(imagemin()).pipe(dest('dist/images'));
 }
 
 function jsTask() {
